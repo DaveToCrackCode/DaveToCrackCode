@@ -8,10 +8,20 @@ body {
 	align-content: center;
 	color: darkred;
 	background-color: black;
-	background-image: url("aa.jpg");
+/*	background-image: url("aa.jpg");*/
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+@media (max-width: 900px) {
+  .topbackground {
+	height: 80%;
+	width: 100%;
+}
+}
+
+
+
 .menubar{
 	height: 50px;
 }
