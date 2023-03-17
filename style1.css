@@ -7,7 +7,7 @@ body {
 
 }
 .topbackground {
-	height: 200px;
+	height: 15%;
 	width: 100%;
 	align-content: center;
 	color: darkred;
@@ -17,23 +17,8 @@ body {
 	background-position: center;
 }
 
-@media (max-width: 900px) {
-  .topbackground {
-	height: 15%;
-	width: 110%;
-}
-.menubar{
-	font-size: 10px;
-}
-}
-@media (max-width: 600px) {
-	.Series_names li{
-		font-size: 12px;
-	}
-	.serial{
-		font-size: 15px;
-	}
-}
+
+
 
 
 
@@ -50,11 +35,7 @@ body {
 	float: left;
 }*/
 .videointro{
-
-	height: 200px;
-	width: auto;
-	background-color: black;
-	float: left;
+	width: 30%;
 }
 .bottomblock{
 	color: white;
@@ -151,3 +132,17 @@ font-size: 25PX;
 }
 
 /* code editor */
+@media (max-width: 900px) {
+  body{
+	font-size: 12px;
+  }
+	
+	.videointro{
+		width: 200px;
+	}
+}
+@media (max-width: 600px) {
+	.Series_names{
+		font-size: 15px;
+	}
+}
