@@ -4,6 +4,7 @@ function onclickhandle(){
   var x= document.getElementById("droparray");
   if(x.style.display=="none"){
     x.style.display="block";
+   
   }else{
     x.style.display="none";
   }
@@ -16,6 +17,14 @@ function onclickhandle1(){
  }else{
    x.style.display="none";
  }
+}
+function openNav(){
+  console.log("yes");
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav(){
+  document.getElementById("mySidepanel").style.width = "0";
 }
 // function myFunction() {
 //     document.getElementById("droparray").classList.toggle("show");

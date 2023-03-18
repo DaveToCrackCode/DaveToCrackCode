@@ -9,46 +9,58 @@
 
 </head>
 <body >
-	<img  class="topbackground" src="aa.jpg">
-	 
-	<div class="menubar">	
-		<ul>
-			<li>
-				<div class="logoD" ><img src="logo_final.png"  ></div>
-				</li>
-			<li style="color: white;text-align:center ; color: rgb(234, 41, 41); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: none;padding: 10px;"> to Crack Code</li>		
-			<li><a href="index.html">Home</a></li>
-			<li><a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA">Youtube</a></li>
-			<li><a href="menu.html">Menu</a></li>
-			<li><a href="editor.html">Contest Coding</a></li>
-		</ul>
+	<div class="header" style="background-color: black; opacity: 80%; height: 50px; width: 100%;">
+		<div id="mySidepanel" class="sidepanel">
+		<a href="javascript:void(0)"  class="closebtn" onclick="closeNav()" > × </a>
+		<a href="index.html">Home</a>
+		<a href="menu.html">DSA</a>
+		<a href="editor.html">Contest Coding</a>
+		<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA">Youtube</a>
+		<a href="#">Contact me</a>
+	  </div>
+	  <button class="openbtn" onclick="openNav()" style="margin-left: 8%; " >☰ </button>  
+	<div class="logoD"><img src="logo.png" style="height: 48px;"></div>
 	</div>
-
-    <ul class="Series_names">
-    	<li  class="serial"  onclick="onclickhandle()">=> Array and STL 
+	  
+	
+    
+    	<div  class="serial" id="array" onclick="onclickhandle()"> Array and STL </div>
 		<div id="droparray">
-        <ul>
-			<li ><a href="https://youtu.be/FCk5XwMkV1A">1. Array Data Structure </a></li>
-			<li ><a href="https://youtu.be/lvIR5PSA3rM">2. Vector and Pair </a></li>
-			<li ><a href="https://youtu.be/mw_gL2bwXv8">3. Map and Unordered_map </a></li>
-			<li ><a href="https://youtu.be/pwhddGMddXk">4. Set and unordered_set </a></li>
-			<li ><a href="https://youtu.be/_8hYkUSTPTc">5. Maximum Minimum element and Reverse </a></li>
-			<li ><a href="https://youtu.be/g22mdOEqJDE">6. Left Rotation of Array </a></li>
-			<li ><a href="https://youtu.be/a5MYpxwVd0Y">7. Move Zero's to the end of Array </a></li>
-			<li ><a href="https://youtu.be/XtsXrOz9yFw">8. Best Time to Buy & Sell Stocks </a></li>
-			<li ><a href="https://youtu.be/L8OttHOCryE">9. Kadane's Algorithm </a></li>
-			<li ><a href="https://youtu.be/oZLdA8Bkklo">10. Leaders in a Array </a></li>
-			<li ><a href="https://youtu.be/NNGstf2hrqM">11. Majority Element</a></li>
-			<li ><a href="https://youtu.be/9BmQB-RlBqQ">12. Sliding Window Concept </a></li>
-			<li ><a href="https://youtu.be/yc0BkczS_G4">13. Container with most water </a></li>
-			<li ><a href="https://youtu.be/zI-S4GWZxso">14. Next Permutation</a></li>
-			<li ><a href="https://youtu.be/nlOKYwH9K9Y">15. Trapping Rain Water (Part - 1) </a></li>
-			<li ><a href="https://youtu.be/3WAg3lv2ejE">16. Trapping Rain Water Maximum Optimisation </a></li>
+       
+			<div class="serial"><a href="https://youtu.be/FCk5XwMkV1A">1. Array Data Structure </a></div>
+			<div class="serial"><a href="https://youtu.be/lvIR5PSA3rM">2. Vector and Pair </a></div>
+			<div class="serial"><a href="https://youtu.be/mw_gL2bwXv8">3. Map and Unordered_map </a></div>
+			<div class="serial"><a href="https://youtu.be/pwhddGMddXk">4. Set and unordered_set </a></div>
+			<div class="serial"><a href="https://youtu.be/_8hYkUSTPTc">5. Maximum Minimum element and Reverse </a></div>
+			<div class="serial"><a href="https://youtu.be/g22mdOEqJDE">6. Left Rotation of Array </a></div>
+			<div class="serial"><a href="https://youtu.be/a5MYpxwVd0Y">7. Move Zero's to the end of Array </a></div>
+			<div class="serial"><a href="https://youtu.be/XtsXrOz9yFw">8. Best Time to Buy & Sell Stocks </a></div>
+			<div class="serial"><a href="https://youtu.be/L8OttHOCryE">9. Kadane's Algorithm </a></div>
+			<div class="serial"><a href="https://youtu.be/oZLdA8Bkklo">10. Leaders in a Array </a></div>
+			<div class="serial"><a href="https://youtu.be/NNGstf2hrqM">11. Majority Element</a></div>
+			<div class="serial"><a href="https://youtu.be/9BmQB-RlBqQ">12. Sliding Window Concept </a></div>
+			<div class="serial"><a href="https://youtu.be/yc0BkczS_G4">13. Container with most water </a></div>
+			<div class="serial"><a href="https://youtu.be/zI-S4GWZxso">14. Next Permutation</a></div>
+			<div class="serial"><a href="https://youtu.be/nlOKYwH9K9Y">15. Trapping Rain Water (Part - 1) </a></div>
+			<div class="serial"><a href="https://youtu.be/3WAg3lv2ejE">16. Trapping Rain Water Maximum Optimisation </a></div>
 			
-		</ul>
-	</div>
-</li>
-<li  class="serial"  onclick="onclickhandle1()">=> Sorting
+		</div>
+		<div  class="serial"  onclick="onclickhandle1()"> Sorting and Searching </div>
+		<div id="drop1">
+       
+			<div class="serial"><a href="https://youtu.be/Z4-gNRn78lI">1. Bubble Sort </a></div>
+			<div class="serial"><a href="https://youtu.be/05xPW7COmB0">2. Selection Sort </a></div>
+			<div class="serial"><a href="https://youtu.be/vF7lfUWjkhs">3. Insertion Sort</a></div>
+			<div class="serial"><a href="https://youtu.be/UtuhBsso26M">4. Count Sort </a></div>
+			<div class="serial"><a href="https://youtu.be/AwOwiDmPlRY">5. Radix Sort </a></div>
+			<div class="serial"><a href="https://youtu.be/QpNmfd88jtQ">6. Quick Sort </a></div>
+			<div class="serial"><a href="https://youtu.be/-4V3TjHAzdk">7. Merge Sort </a></div>
+			
+			
+		</div>
+	
+
+<!-- <li  class="serial"  onclick="onclickhandle1()"> Sorting
 	<div id="drop1">
 	<ul>
 		<li ><a href="https://youtu.be/Z4-gNRn78lI">1. Bubble Sort </a></li>
@@ -61,7 +73,7 @@
 		
 	</ul>
 </div>
-</li>
+</li> -->
 <!-- 		
     	<li><a href=""><div class="serial">2.</div> Sorting And Searching</a></li>
     	<li><a href=""><div class="serial">3.</div> Binary Search</a></li>
@@ -69,14 +81,17 @@
     </ul>
     
 	<script src="script.js"></script>
+	
 	<div class="footer">
+		<div class="bottomblock"> 
+			Beat The Luck Dave
+		</div> 
+		<div class="socialmedia">
 		<a href="https://www.instagram.com/dave_to_crack_code/"><img src="instagram.png" alt=""></a>
 		<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA"><img src="youtube.png" alt=""></a>
 		<a href="https://www.linkedin.com/in/dave-to-crack-code/"><img src="linkedin.png" alt=""></a>
-		</div>
-<div class="bottomblock"> 
-	Beat The Luck<br>
-	DAVE🔥
-</div> 
+	</div>
+	</div>
+	
 </body>
 </html>
