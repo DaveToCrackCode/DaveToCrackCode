@@ -1,14 +1,21 @@
 body {
-	background-color: #202020;
-    font-family: serif;
+	/* background-color: #202020; */
+    font-family: 'Courier New', Courier, monospace;
 	zoom: 125%;
 	margin: 0px;
 	padding: 0px;
+	background-image: url("bbg.png");
+min-height: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
 
 }
 .topbackground {
 	height: 15%;
 	width: 100%;
+	opacity: 70%;
 	align-content: center;
 	color: darkred;
 	background-color: black;
@@ -17,25 +24,19 @@ body {
 	background-position: center;
 }
 
-
-
-
-
-
 .menubar{
 	height: 50px;
+	font-size: 15px;
+	
 }
-.socialmedia li a:hover{
-	border-bottom: none;
-/*	border-style: inset;*/
-	border-right: 3px solid skyblue;
-    border-bottom: 3px solid skyblue;
-}
-/*iframe{
-	float: left;
-}*/
+
 .videointro{
-	width: 30%;
+	width: 50%;
+	margin-top: 20px;
+	/* margin-left: 10px; */
+	display: flex;
+	float: left;
+	justify-content: center;
 }
 .bottomblock{
 	color: white;
@@ -44,76 +45,112 @@ body {
 	padding: 20px;
 }
 
-ul {
+.menubar ul {
 	background-color: #111;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	opacity: 90%;
 }
-li{
-	width: 25%;
+.menubar li{
+	width: auto;
 	float: left;
 }
-li a{
+.menubar li a{
 	display: block;
+	font-family: 'Courier New', Courier, monospace ;
 	color: white;
 	text-align: center;
+	margin-left: 5px;
 	text-decoration: none;
+	/* height: 20px; */
 	padding: 10px;
+
 }
-li a:hover{
+.menubar li a:hover{
 	background-color: #333;
 
 	border-bottom:  2px solid red;
 }
+
+.logoD{
+	padding: 0px; 
+	margin-left: 50px;
+	display: flex; 
+	justify-content: center;
+	/* width: 10%; */
+}
+
+
+
 .Series_names{
-	float: left;
-width: 100%;
-height:auto;
-margin-top: 10px;
-color: black;
-background-color: white;
-font-family: serif;
-font-size: 25PX;
-}
-.Series_names li{
 	width: 100%;
-	color: black;
 	float: left;
-}
-.Series_names li a{
-	display: block;
-	color: black;
-    padding-left: 10%;
-	text-align: left;
-	text-decoration: none;
-	padding: 10px;
-}
-.Series_names li a:hover{
-	color: red;
-	background-color: white;
+	background: #000;
+	opacity: 80%;
+	color: antiquewhite;
 
-	border-left: 5px solid red;
-	border-bottom: none;
-
+}
+.Series_names ul,ul li{
+	list-style: none;
+	padding-left: 0px;
+	margin-left: 0px;
 }
 .serial{
-	text-align: center;
-	width: 20%;
-	text-decoration: bold;
-	float: left;
+width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+/* margin-bottom: 10px; */
+cursor: pointer;
+
 }
-
-
 #droparray{
-	/* visibility:hidden; */
+	padding: 0px;
+	margin: 0px;
 	display: none;
-	color: wheat;
-	background-color: antiquewhite;
+ color: antiquewhite;
+	background-color: 000;
 	
 }
 
+#droparray ul li a{
+	width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 15px;
+	display: block;
+	text-decoration: none;
+	color: antiquewhite;
+}
+#droparray ul li a:hover{
+	/* background-color: rgb(255, 255, 255); */
+	color: red;
+	opacity: 100%;
+}
+#drop1{
+	padding: 0px;
+	margin: 0px;
+	display: none;
+ color: antiquewhite;
+	background-color: 000;
+	
+}
+
+#drop1 ul li a{
+	width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 15px;
+	display: block;
+	text-decoration: none;
+	color: antiquewhite;
+}
+#drop1 ul li a:hover{
+	/* background-color: rgb(255, 255, 255); */
+	color: red;
+	opacity: 100%;
+}
 .footer{
 	
 	display: flex;
@@ -132,17 +169,70 @@ font-size: 25PX;
 }
 
 /* code editor */
-@media (max-width: 900px) {
-  body{
-	font-size: 12px;
-  }
-	
-	.videointro{
-		width: 200px;
+
+
+
+@media (max-width: 794px){
+	.menubar{
+		font-size: 10px;
 	}
-}
-@media (max-width: 600px) {
+	.logoD{
+		height: 31.25px;
+	}
 	.Series_names{
 		font-size: 15px;
 	}
+	.videointro{
+		width: 100%;
+	}
 }
+@media (max-width: 605px){
+	.menubar{
+		font-size: 8px;
+	}
+	.logoD{
+		height: 29.33px;
+	}
+	.Series_names{
+		font-size: 12px;
+	}
+}
+@media (max-width: 530px){
+	.menubar{
+		font-size: 6px;
+	}
+	
+	.logoD{
+		margin-left: 20px;
+		height: 27.33px;
+	}
+	.Series_names{
+		font-size: 11px;
+	}
+}
+@media (max-width: 422px){
+	.menubar{
+		font-size: 5px;
+	}
+	.logoD{
+		margin-left: 10px;
+		height: 25.63px;
+	}
+	.Series_names{
+		font-size: 8px;
+	}
+}
+@media (max-width: 372px){
+	.menubar{
+		font-size: 5px;
+	}
+	.menubar li a{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.logoD{
+		margin-left: 5px;
+		height: 25.63px;
+	}
+}
+

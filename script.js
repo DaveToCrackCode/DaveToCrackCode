@@ -1,30 +1,22 @@
 
-
-
-
-
-
-
-var xx=true;
-let x= document.getElementById('array');
-x.addEventListener('click',handlearrayclick);
-function handlearrayclick(e){
-  console.log("hh");
-    e.preventDefault()
-    if(xx==true){
-    document.getElementById('droparray').style.display="block";
-    xx=false;
-    }
-    else{
-        xx=true;
-        document.getElementById('droparray').style.display="none";
-   
-    }
-    return false;
-   
+function onclickhandle(){
+   console.log("Click")
+  var x= document.getElementById("droparray");
+  if(x.style.display=="none"){
+    x.style.display="block";
+  }else{
+    x.style.display="none";
+  }
 }
-
-
+function onclickhandle1(){
+  console.log("Click")
+ var x= document.getElementById("drop1");
+ if(x.style.display=="none"){
+   x.style.display="block";
+ }else{
+   x.style.display="none";
+ }
+}
 // function myFunction() {
 //     document.getElementById("droparray").classList.toggle("show");
 //   }
