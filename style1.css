@@ -345,3 +345,10 @@ margin-top: auto;
 	
 	
 }
+@media (max-width: 300px) {
+	body{
+		background-image: url('bg300.png');
+	}
+	
+	
+}
