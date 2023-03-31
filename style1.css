@@ -39,18 +39,49 @@ body::-webkit-scrollbar {
 
 
 
-/* Side panel */
-.header{
+/* Dekstop header */
+#header{
+	background-color: white; opacity: 100%; height: 50px; width: 100%;
+	display: flex;
+	flex-direction: row;
 	height: auto;
-	font-size: 20px;
 	position: sticky;
 	top: 0px;
 	z-index: 1;
 }
+.head_container{
+	display: flex;
+	width: 100%;
+	flex-direction: row-reverse;
+	/* flex-wrap: nowrap; */
+}
+.headerelements{
+	/* margin-left: 4%; */
+	display: flex;
+	justify-content: center;
+	height: auto;
+	float: left;
+	font-family: Rubik,sans-serif;
+	/* width: auto; */
+	cursor: pointer;
+	padding: 20px;
+	vertical-align: middle;
+	/* margin-top: 8px; */
+}
+.headerelements a{
+	color: black;
+	text-decoration: none;
+}
+.headerelements a:hover{
+	
+	color: red;
+	/* font-size: large; */
+}
 .logoD{
-    height: 55px;
-	padding: 0px; 
-	margin-left: 10%;
+    height: 50px;
+	padding: 5px; 
+	margin-left: 8%;
+	/* margin-top: 5px; */
 	display: flex;
 	/* position: right; */
 	float: left;
@@ -61,43 +92,57 @@ body::-webkit-scrollbar {
 	height: 48px;
 }
 
+/* side panel for mobile */
 .sidepanel {
 	width: 0;
 	position: fixed;
 	z-index: 1;
 	/* height: 50%; */
+	display: flex;
+	flex-direction: column;
 	top: 0;
 	right: 0;
-	background-color: #ffffff;
+	background-color: white;
 	opacity: 90%;
 	overflow-x: hidden;
 	transition: 0.5s;
-	/* padding-top: 60px; */
-	/* padding-bottom: 40px; */
+	
   }
   
  
-  
   .sidepanel  a{
 	height: 9%;
-	display: block;
+	display: flex;
 	transition: 0.3s;
 	font-family: 'Courier New', Courier, monospace ;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 15px;
 	color: rgb(0, 0, 0);
 	text-align: center;
-	margin-left: 5px;
+	justify-content: center;
+	/* margin-left: 5px; */
 	text-decoration: none;
 	/* height: 20px; */
 	/* padding-top: 10%; */
-	padding: 3%;
+	padding: 4%;
 	/* margin-top: 15px; */
 	
 
 }
+#modeicon{
+	margin-top: 50px;
+	height: 9%;
+	display: flex;
+	justify-content: center;
+	padding: 4%;
+	/* transition: 0.3s; */
+	/* float: left; */
+	font-family: 'Courier New', Courier, monospace ;
+	text-align: center;
+	cursor: pointer;
+}
 .sidepanel a:hover{
-	font-size:27px;
+	font-size: 16px;
 	color: red;
 }
 
@@ -110,14 +155,15 @@ body::-webkit-scrollbar {
   }
   
   .openbtn {
-	display: flex;
+
+	display: none;
 	position: fixed;
 	right: 8%;
 	/* top: 10px; */
 		/* margin-left: 62%; */
 	font-size: 20px;
 	cursor: pointer;
-	background-color: #ffffff;
+    background: none;
 	/* opacity: 80%; */
 	color: rgb(0, 0, 0);
 	padding: 10px 15px;
@@ -198,7 +244,7 @@ body::-webkit-scrollbar {
 	/* transition: 0.51s; */
 	display: none;
 	width: 100%;
-	height: 20%;
+	height: 30%;
 }
 .discription{
 	/* transition: 0.51s; */
@@ -211,8 +257,8 @@ body::-webkit-scrollbar {
 	border-radius: 20px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	height: 200px;
-	width: 90%;
-	margin-left: 5%;
+	width: 80%;
+	margin-left: 10%;
 	justify-content: center;
 	background-color: #000000;
 	opacity: 90%;
@@ -262,12 +308,12 @@ margin-top: 15px;
 /* DSA serial ends here */
 
 /* footer from here */
-.footer{
+#footer{
 	/* position: inherit;
 top:80%; */
 margin-top: auto;
 /* bottom: 0px; */
-	background-color: #ffffff;
+	background-color: white;
 	/* opacity: 80%; */
 	display: flex;
     /* margin-top: 40px; */
@@ -315,10 +361,7 @@ margin-top: auto;
 /* code editor */
 
 
-@media (max-width: 794px){
-	body{
-		background-image: url('bg790.png');
-	}
+@media (max-width: 861px){
 	.serial{
 		font-size: 15px;
 	}
@@ -345,24 +388,12 @@ margin-top: auto;
 	.textdiscriptionvideo{
 		width: 90%;
 	}
-	.sidepanel a{
-		font-size: large;
+	
+	.openbtn{
+		display: flex;
 	}
-	.sidepanel a:hover{
-		font-size: medium;
+	.head_container{
+		display: none;
 	}
 }
-@media (max-width: 412px) {
-	body{
-		background-image: url('bg300.png');
-	}
-	
-	
-}
-@media (max-width: 300px) {
-	body{
-		background-image: url('bg300.png');
-	}
-	
-	
-}
+

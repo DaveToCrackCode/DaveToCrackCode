@@ -62,18 +62,50 @@ function opendis(){
 
 
 function openNav(){
-  if(window.innerWidth <= 768){
-    console.log("yes");
+ 
   document.getElementById("mySidepanel").style.width = "50%";
-   
-}
-else{
-  document.getElementById("mySidepanel").style.width = "30%";
-}
+
   document.getElementById("mySidepanel").style.height = "100%";
   
 }
 
 function closeNav(){
   document.getElementById("mySidepanel").style.width = "0";
+}
+function changemod(){
+  var bk=document.body;
+var hbcolor=document.getElementById("header");
+var y=document.getElementsByClassName("textmode");
+var ftclr=document.getElementById("footer");
+var sidepan=document.getElementsByClassName("sidepanel");
+if(hbcolor.style.backgroundColor=="black"){
+  hbcolor.style.backgroundColor="white";
+  ftclr.style.backgroundColor="white";
+  bk.style.backgroundImage="url(\"bbg1.png\")";
+  bk.style.color="black";
+  
+}
+else{
+  hbcolor.style.backgroundColor="black";
+  ftclr.style.backgroundColor="black"
+  bk.style.backgroundImage="url(\"bbg2.png\")";
+  bk.style.color="white";
+}
+
+for(var i=0;i<y.length;i++){
+  if(y[i].style.color=="white"){
+    y[i].style.color="black";
+  }
+  else{
+    y[i].style.color="white";
+  }
+}
+for(var i=0;i<sidepan.length;i++){
+  console.log(sidepan[i].style.backgroundColor);
+  if(sidepan[i].style.backgroundColor=="black")
+  sidepan[i].style.backgroundColor="white";
+  else
+  sidepan[i].style.backgroundColor="black";
+}
+
 }

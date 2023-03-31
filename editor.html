@@ -9,26 +9,39 @@
 
 </head>
 <body align="center" class="editorb">
-	<div class="header" style="background-color: #ffffff; opacity: 100%; height: 50px; width: 100%;">
+	<div  id="header">
+		
+		<!-- phone -->
 		<div id="mySidepanel" class="sidepanel">
-		<a href="javascript:void(0)" style="padding-top: 10px; font-size: larger" class="closebtn" onclick="closeNav()" > × </a>
-		<a href="index.html" style="margin-top: 50px;" >Home</a>
-		<a href="menu.html">DSA</a>
-		<a href="editor.html">Contest Coding</a>
-		<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA">Youtube</a>
-		<a href="#">Contact me</a>
+		<a href="javascript:void(0)" style="padding-top: 10px; font-size: larger; color: red;" class="closebtn" onclick="closeNav()" > × </a>
+		
+		<div id="modeicon" onclick="changemod()"><img src="dark-mode.png" style="height: 20px; " alt=""></div>
+		<a href="index.html" class="textmode" >Home</a>
+		<a href="menu.html" class="textmode">DSA</a>
+		<a href="editor.html" class="textmode">Contest Coding</a>
+		<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA" class="textmode">Youtube</a>
+		<a href="#" class="textmode">Contact me</a>
 	  </div>
 	  <div class="logoD"><a href="index.html"><img src="logo.png" ></a></div>
-	  <button class="openbtn" onclick="openNav()"  >☰ </button>  
+	  <!-- dekstop -->
+	  <div class="head_container">
+		  <div id="modeicon" style="margin-top: 2.4%; padding-top: 0px; padding-bottom: 0px;"  onclick="changemod()" style="margin-right: 8%;" > <img src="dark-mode.png" style="height: 20px; " alt=""></div>
+		  <div class="headerelements"><a  class="textmode" href="#">Contact me</a></div>
+		  <div class="headerelements"><a class="textmode"  href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA">Youtube</a></div>
+		  <div class="headerelements"><a class="textmode" href="editor.html">Contest Coding</a></div>
+		  <div class="headerelements"><a class="textmode" href="menu.html">DSA</a></div>
+		  <div class="headerelements"><a class="textmode" href="index.html" >Home</a> </div>
+	 </div>
+	  <button class="openbtn textmode" onclick="openNav()"  >☰ </button>  
 	</div>
 	  
  
-	<h1 style="color: rgb(2, 2, 2); font-family: 'Courier New', Courier, monospace;">Coming Soon</h1>
+	<h1 style="font-family: 'Courier New', Courier, monospace;">Coming Soon</h1>
 
 	<script src="script.js"></script>
    
-	<div class="footer">
-		<div class="bottomblock"> 
+	<div id="footer" >
+		<div class="bottomblock textmode"> 
 			Beat The Luck Dave
 		</div> 
 		<div class="socialmedia">
