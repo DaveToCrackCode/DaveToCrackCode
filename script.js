@@ -50,7 +50,7 @@ function opendis(){
   var x=document.getElementById("discriptionblock");
   console.log("kk");
   if(x.style.display=="block"){
-    document.getElementById("bubble").style.color="white";
+    document.getElementById("bubble").style.color="black";
     
   x.style.display="none";
   }
@@ -62,8 +62,14 @@ function opendis(){
 
 
 function openNav(){
-  console.log("yes");
-  document.getElementById("mySidepanel").style.width = "300px";
+  if(window.innerWidth <= 768){
+    console.log("yes");
+  document.getElementById("mySidepanel").style.width = "50%";
+   
+}
+else{
+  document.getElementById("mySidepanel").style.width = "30%";
+}
   document.getElementById("mySidepanel").style.height = "100%";
   
 }
