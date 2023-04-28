@@ -1,98 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<link rel="stylesheet" type="text/css" href="style1.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dave</title>
-	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dave</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
 
-</head>
-<body onload="changemode1()" >
-	<div  id="header">
-		
-		<!-- phone -->
-		<div id="mySidepanel" class="sidepanel">
-		<a href="javascript:void(0)" style="padding-top: 10px; font-size: larger; color: red;" class="closebtn" onclick="closeNav()" > × </a>
-		
-		<div id="modeicon" onclick="changemod()"><img src="images/dark-mode.png" style="height: 20px; " alt=""></div>
-		<a href="#" class="textmode" >Home</a>
-		<a href="menu.html" class="textmode">DSA</a>
-		<a href="editor.html" class="textmode">Contest Coding</a>
-		<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA" class="textmode">Youtube</a>
-		<a href="#" class="textmode">Contact me</a>
-	  </div>
-	  <div class="logoD"><a href="#"><img src="images/logo.png" ></a></div>
-	  <!-- dekstop -->
-	  <div class="head_container">
-		  <div id="modeicon" style="margin-top: 1.8%; padding-top: 0px; padding-bottom: 0px;"  onclick="changemod()" style="margin-right: 8%;" > <img src="images/dark-mode.png" style="height: 20px; " alt=""></div>
-		  <div class="headerelements"><a  class="textmode" href="#">Contact me</a></div>
-		  <div class="headerelements"><a class="textmode"  href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA">Youtube</a></div>
-		  <div class="headerelements"><a class="textmode" href="editor.html">Contest Coding</a></div>
-		  <div class="headerelements"><a class="textmode" href="menu.html">DSA</a></div>
-		  <div class="headerelements"><a class="textmode" href="index.html" >Home</a> </div>
-	 </div>
-	  <button class="openbtn textmode" onclick="openNav()"  >☰ </button>  
-	</div>
-	 
-	  <script src="script.js"></script>
-   <!-- Loading Page -->
-	<div id="loading">
-		<table>
-			<tr style="text-align: center;">
-				<td><img src="images/load_logo.png" style="height: 50px;" alt=""></td>
-		    </tr>
-			<tr>
-				<td><h1 style="display: block;">Loading...</h1></td>
-			</tr>
-		</table>
-	</div>
+	</head>
+	<body onload="changemode1()">
+		<div id="header">
 
-	
+			<!-- phone -->
+			<div id="mySidepanel" class="sidepanel">
+				<a href="javascript:void(0)" style="padding-top: 10px; font-size: larger;
+					color: red;" class="closebtn" onclick="closeNav()"> × </a>
 
-	<div class="videocontent" style="display: flex; flex-direction: row;flex-wrap: wrap;">
-		 <div class="videointro">
-		<iframe  height="100%" src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUWlzO187oxshw6yWLvBXC2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div id="modeicon" onclick="changemod()"><img src="images/dark-mode.png"
+						style="height: 20px; " alt=""></div>
+				<a href="#" class="textmode">Home</a>
+				<a href="menu.html" class="textmode">DSA</a>
+				<a href="editor.html" class="textmode">Contest Coding</a>
+				<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA"
+					class="textmode">Youtube</a>
+				<a href="contact.html" class="textmode">Contact me</a>
+			</div>
+			<div class="logoD"><a href="#"><img src="images/logo.png"></a></div>
+
+			<!-- dekstop -->
+			<div class="head_container">
+				<div id="modeicon" style="margin-top: 1.8%; padding-top: 0px;
+					padding-bottom: 0px;" onclick="changemod()" style="margin-right: 8%;"> <img
+						src="images/dark-mode.png" style="height: 20px; " alt=""></div>
+				<div class="headerelements"><a class="textmode" href="contact.html">Contact me</a></div>
+				<div class="headerelements"><a class="textmode"
+						href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA">Youtube</a></div>
+				<div class="headerelements"><a class="textmode" href="editor.html">Contest
+						Coding</a></div>
+				<div class="headerelements"><a class="textmode" href="menu.html">DSA</a></div>
+				<div class="headerelements"><a class="textmode" href="index.html">Home</a>
+				</div>
+			</div>
+			<button class="openbtn textmode" onclick="openNav()">☰ </button>
 		</div>
-     	
-		<div class="videointro">
-		<iframe height="100%" src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUWW0s3_kjiDQtAXgfC-4SKL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<script src="script.js"></script>
+
+		<!-- Loading Page -->
+		<div id="loading">
+			<table>
+				<tr style="text-align: center;">
+					<td><img src="images/load_logo.png" style="height: 50px;" alt=""></td>
+				</tr>
+				<tr>
+					<td><h1 style="display: block;">Loading...</h1></td>
+				</tr>
+			</table>
 		</div>
-		 <div class="videointro">
-			<iframe height="100%" src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUVMMWCp6CO_YF1vpdt4wskd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+        <div id="discriptionblock" >
+			<div class="discription" style="height: 15em;">
+				<div class="waviy">
+					<span style="--i:1">D</span>
+					<span style="--i:2">A</span>
+					<span style="--i:3">V</span>
+					<span style="--i:4">E</span> <br>
+					<span style="--i:5">T</span>
+					<span style="--i:6">O</span>
+					<span style="--i:7">C</span>
+					<span style="--i:8">R</span>
+					<span style="--i:9">A</span>
+					<span style="--i:10">C</span> 
+					<span style="--i:11">K</span> <br>
+					<span style="--i:12">C</span>
+					<span style="--i:13">O</span>
+					<span style="--i:14">D</span>
+					<span style="--i:15">E</span> 
+				 
+				   </div>
+			</div>
+			
+				<div class="discription">
+					"The more you think its easier, the more easily you grap things."
+				</div>
+			
 		</div>
-		 
-		<div class="videointro">
-			<iframe  height="100%" src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUVmZA383fqNXUKruZEX1KmG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
+		<div id="discriptionblock" style="padding: 10%; width: 80%; ">
+			Welcome to Dave to Crack Code, your ultimate resource for learning data structures and algorithms (DSA) and mastering the art of programming! Whether you're a beginner looking to
+					 get started with coding or an experienced developer seeking to enhance your skills, we've got you covered.
 		</div>
-		
-		<div class="videointro">
-    		<iframe  height="100%" src="https://www.youtube.com/embed/ZSVUlV48TxI?autoplay=0&muted=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		</div>
-		<div class="videointro">
-    		<iframe height="100%" src="https://www.youtube.com/embed/RERYTy4vKmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+
+		<!-- <div class="videocontent" style="display: flex; flex-direction: row;flex-wrap:
+			wrap;">
+			<div class="videointro">
+				<iframe height="100%"
+					src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUWlzO187oxshw6yWLvBXC2I"
+					title="YouTube video player" frameborder="0" allow="accelerometer;
+					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+					web-share" allowfullscreen></iframe>
+			</div>
+
+			<div class="videointro">
+				<iframe height="100%"
+					src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUWW0s3_kjiDQtAXgfC-4SKL"
+					title="YouTube video player" frameborder="0" allow="accelerometer;
+					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+					web-share" allowfullscreen></iframe>
+			</div>
+			<div class="videointro">
+				<iframe height="100%"
+					src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUVMMWCp6CO_YF1vpdt4wskd"
+					title="YouTube video player" frameborder="0" allow="accelerometer;
+					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+					web-share" allowfullscreen></iframe>
+			</div>
+
+			<div class="videointro">
+				<iframe height="100%"
+					src="https://www.youtube.com/embed/videoseries?list=PLHgb6GkhKlUVmZA383fqNXUKruZEX1KmG"
+					title="YouTube video player" frameborder="0" allow="accelerometer;
+					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+					web-share" allowfullscreen></iframe>
+			</div>
+
+			<div class="videointro">
+				<iframe height="100%"
+					src="https://www.youtube.com/embed/ZSVUlV48TxI?autoplay=0&muted=1"
+					title="YouTube video player" frameborder="0" allow="accelerometer;
+					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+					web-share" allowfullscreen></iframe>
+			</div>
+			<div class="videointro">
+				<iframe height="100%" src="https://www.youtube.com/embed/RERYTy4vKmA"
+					title="YouTube video player" frameborder="0" allow="accelerometer;
+					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+					web-share" allowfullscreen></iframe>
+			</div>
 
 
-</div>
-  
+		</div>  -->
 
 
 
 
-    	<div id="footer" >
-			<div class="bottomblock textmode"> 
+
+		<div id="footer">
+			<div class="bottomblock textmode">
 				Beat The Luck Dave
-			</div> 
+			</div>
 			<div class="socialmedia">
-			<a href="https://www.instagram.com/dave_to_crack_code/"><img src="images/instagram.png" alt=""></a>
-			<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA"><img src="images/youtube.png" alt=""></a>
-			<a href="https://www.linkedin.com/in/dave-to-crack-code/"><img src="images/linkedin.png" alt=""></a>
-    	</div>
+				<a href="https://www.instagram.com/dave_to_crack_code/"><img
+						src="images/instagram.png" alt=""></a>
+				<a href="https://www.youtube.com/channel/UC7bzV5BdSTXufiPwLRrjvxA"><img
+						src="images/youtube.png" alt=""></a>
+				<a href="https://www.linkedin.com/in/dave-to-crack-code/"><img
+						src="images/linkedin.png" alt=""></a>
+			</div>
 		</div>
-		
-	
-	
-	
-</body>
+
+
+
+
+	</body>
 </html>

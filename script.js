@@ -1,47 +1,4 @@
-// List of Topics
-function onclickhandle(){
-  var x= document.getElementById("droparray");
-  if(x.style.display=="block"){
-    x.style.display="none";
-   
-  }else{
-    x.style.display="block";
-  }
-}
 
-
-function onclickhandle1(){
-  var x= document.getElementById("sorting");
-  var dis=x.style.display;
-  if(dis=='block'){
-   x.style.display="none";
-  }
-  else {
-   x.style.display="block"; 
- }
-}
-
-function onclickhandle2(){
-  var x=document.getElementById("Searching");
-  
-  if(x.style.display=="block"){
-    x.style.display="none";
-  }
-  else{
-    x.style.display="block";
-  }
-}
-
-function onclickhandle3(){
-  var x=document.getElementById("Recursion");
-  if(x.style.display=="block"){
-    x.style.display="none";
-  }
-  else{
-    x.style.display="block";
-  }
-}
-// End of List
 function opendis(){
   var x=document.getElementById("discriptionblock");
 
@@ -68,6 +25,10 @@ function openNav(){
 function closeNav(){
   document.getElementById("mySidepanel").style.width = "0";
 }
+
+
+
+
 function changemode1(){
   var bk=document.body
   var hbcolor=document.getElementById("header");
@@ -76,32 +37,42 @@ function changemode1(){
   var sidepan=document.getElementsByClassName("sidepanel");
   var serial_color=document.getElementsByClassName("serial");
   console.log(serial_color);
-
-  if(localStorage.getItem("mode") == 'white'){
-    hbcolor.style.backgroundColor="white";
-    ftclr.style.backgroundColor="white";
-    bk.style.backgroundImage="url(\"images/bbg1.png\")";
-    bk.style.color="black";
+  
+  if(localStorage.getItem("mode") == 'black'){
+    hbcolor.style.backgroundColor="black";
+    ftclr.style.backgroundColor="black"
+    for(var i=0;i<serial_color.length;i++){
+      serial_color[i].style.color="white";
+     }
+    // bk.style.backgroundImage="url(\"images/bbg2.png\")";
+    bk.style.backgroundColor="black";
+    bk.style.color="white";
     for(var i=0;i<y.length;i++){
-        y[i].style.color="black";
-    }
-    for(var i=0;i<sidepan.length;i++){
-      sidepan[i].style.backgroundColor="white";
-    }
-    // localStorage.setItem('mode','white');
+      y[i].style.color="white";
+  }
+  for(var i=0;i<sidepan.length;i++){
+    sidepan[i].style.backgroundColor="black";
   }
 
+  // localStorage.setItem('mode','white');
+}
+
 else{
-  hbcolor.style.backgroundColor="black";
-  ftclr.style.backgroundColor="black"
-  bk.style.backgroundImage="url(\"images/bbg2.png\")";
-  bk.style.color="white";
+  hbcolor.style.backgroundColor="white";
+  ftclr.style.backgroundColor="white";
+  for(var i=0;i<serial_color.length;i++){
+    serial_color[i].style.color="black";
+   }
+  // bk.style.backgroundImage="url(\"images/bbg1.png\")";
+  bk.style.backgroundColor="white";
+  bk.style.color="black";
   for(var i=0;i<y.length;i++){
-    y[i].style.color="white";
-}
-for(var i=0;i<sidepan.length;i++){
-  sidepan[i].style.backgroundColor="black";
-}
+      y[i].style.color="black";
+  }
+  for(var i=0;i<sidepan.length;i++){
+    sidepan[i].style.backgroundColor="white";
+  }
+ 
 }
 document.getElementById("loading").style.display = "none";
 }
@@ -123,8 +94,12 @@ function changemod(){
     if(localStorage.getItem("mode") == 'black'){
       hbcolor.style.backgroundColor="white";
       ftclr.style.backgroundColor="white";
-      bk.style.backgroundImage="url(\"images/bbg1.png\")";
+      // bk.style.backgroundImage="url(\"images/bbg1.png\")";
+      bk.style.backgroundColor="white";
       bk.style.color="black";
+      for(var i=0;i<serial_color.length;i++){
+       serial_color[i].style.color="black";
+      }
       for(var i=0;i<y.length;i++){
           y[i].style.color="black";
       }
@@ -137,7 +112,11 @@ function changemod(){
   else{
     hbcolor.style.backgroundColor="black";
     ftclr.style.backgroundColor="black"
-    bk.style.backgroundImage="url(\"images/bbg2.png\")";
+    for(var i=0;i<serial_color.length;i++){
+      serial_color[i].style.color="white";
+     }
+    // bk.style.backgroundImage="url(\"images/bbg2.png\")";
+    bk.style.backgroundColor="black";
     bk.style.color="white";
     for(var i=0;i<y.length;i++){
       y[i].style.color="white";
@@ -163,23 +142,72 @@ function changemod(){
   for(var i=0;i<sidepan.length;i++){
     sidepan[i].style.backgroundColor="black";
   }
+  for(var i=0;i<serial_color.length;i++){
+    serial_color[i].color="white";
+   }
    localStorage.setItem('mode','black');
  }
 
 
 
-    
-    
-
-// for(var i=0;i<y.length;i++){
-//   if(y[i].style.color=="white"){
-//     y[i].style.color="black";
-//   }
-//   else{
-//     y[i].style.color="white";
-//   }
-// }
-
-
 }
 console.log(localStorage.getItem("mode"));
+
+// Typewriter js
+//made by akash dave
+// var TxtType = function(el, toRotate, period) {
+//   this.toRotate = toRotate;
+//   this.el = el;
+//   this.loopNum = 0;
+//   this.period = parseInt(period, 10) || 2000;
+//   this.txt = '';
+//   this.tick();
+//   this.isDeleting = false;
+// };
+
+// TxtType.prototype.tick = function() {
+//   var i = this.loopNum % this.toRotate.length;
+//   var fullTxt = this.toRotate[i];
+
+//   if (this.isDeleting) {
+//   this.txt = fullTxt.substring(0, this.txt.length - 1);
+//   } else {
+//   this.txt = fullTxt.substring(0, this.txt.length + 1);
+//   }
+
+//   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+//   var that = this;
+//   var delta = 200 - Math.random() * 100;
+
+//   if (this.isDeleting) { delta /= 2; }
+
+//   if (!this.isDeleting && this.txt === fullTxt) {
+//   delta = this.period;
+//   this.isDeleting = true;
+//   } else if (this.isDeleting && this.txt === '') {
+//   this.isDeleting = false;
+//   this.loopNum++;
+//   delta = 500;
+//   }
+
+//   setTimeout(function() {
+//   that.tick();
+//   }, delta);
+// };
+
+// window.onload = function() {
+//   var elements = document.getElementsByClassName('typewrite');
+//   for (var i=0; i<elements.length; i++) {
+//       var toRotate = elements[i].getAttribute('data-type');
+//       var period = elements[i].getAttribute('data-period');
+//       if (toRotate) {
+//         new TxtType(elements[i], JSON.parse(toRotate), period);
+//       }
+//   }
+//   // INJECT CSS
+//   var css = document.createElement("style");
+//   css.type = "text/css";
+//   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+//   document.body.appendChild(css);
+// };
