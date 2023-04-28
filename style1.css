@@ -109,7 +109,7 @@ hr {
   font-size: 30px;
 }
 .waviy span {
-  font-family: 'Alfa Slab One', cursive;
+  /* font-family: 'Alfa Slab One', cursive; */
   position: relative;
   display: inline-block;
   line-height: 40px;
@@ -258,7 +258,7 @@ hr {
 
 .typed-out {
 	overflow: hidden;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+	/* font-family: Comic Sans MS, Comic Sans, cursive; */
 	text-align: center;
 	/* border-right: .15em solid rgb(255, 38, 0); */
 	white-space: nowrap;
@@ -347,7 +347,7 @@ hr {
 }
 
 #discriptionblock {
-	font-family: Comic Sans MS, Comic Sans, cursive;
+	/* font-family: Comic Sans MS, Comic Sans, cursive; */
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
