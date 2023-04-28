@@ -302,7 +302,7 @@ hr {
 	font-size: 20px;
 	margin-left: 8%;
 	font-weight: bold;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+	/* font-family: Comic Sans MS, Comic Sans, cursive; */
 	cursor: pointer;
 	/* background-color: rgb(255, 255, 255); */
 	color: #000000;
@@ -376,13 +376,13 @@ hr {
 }
 .title2 span{
 	font-weight: 500;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+	/* font-family: Comic Sans MS, Comic Sans, cursive; */
 	font-size: 30px;
 	/* color: #ffffff; */
 }
 .title2 .shortdesc2 {
 	/* padding: 10px; */
-	font-family: Comic Sans MS, Comic Sans, cursive;
+	/* font-family: Comic Sans MS, Comic Sans, cursive; */
 	font-size: 15px;
 	/* color: #2E3D49; */
 	margin-bottom: 10px;
@@ -404,7 +404,7 @@ hr {
 	width: 100%;
 	height: 90%;
 	/* position: relative; */
-	font-family: Comic Sans MS, Comic Sans, cursive;
+	/* font-family: Comic Sans MS, Comic Sans, cursive; */
 	border-radius: 10px;
 	justify-content: center;
 	box-shadow: inset 0 0 90px rgba(0,0,0,0.6),
