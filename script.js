@@ -16,7 +16,7 @@ function opendis(){
 
 function openNav(){
  
-  document.getElementById("mySidepanel").style.width = "50%";
+  document.getElementById("mySidepanel").style.width = "60%";
 
   document.getElementById("mySidepanel").style.height = "100%";
   

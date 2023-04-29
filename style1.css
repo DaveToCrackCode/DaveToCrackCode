@@ -156,7 +156,7 @@ hr {
 	transition: 0.3s;
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 20px;
 	color: rgb(0, 0, 0);
 	text-align: center;
 	justify-content: center;
@@ -297,7 +297,7 @@ hr {
 	text-decoration: none;
 	padding-left: 10%;
 	height: 30%;
-	width: 100%;
+	/* width: 100%; */
 	padding: 5%;
 	font-size: 20px;
 	margin-left: 8%;
@@ -538,7 +538,7 @@ top:80%; */
 		font-size: 20px;
 	}
 	.serial {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.bottomblock {
@@ -570,7 +570,7 @@ top:80%; */
 	}
 
 	.typed-out {
-		font-size: medium;
+		font-size: 17px;
 	}
 
 	@keyframes typing {
