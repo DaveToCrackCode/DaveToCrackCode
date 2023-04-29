@@ -532,7 +532,7 @@ top:80%; */
 	.feedbox .feed form input{
 		height: 10px;
 		width: 80%;
-		font-size: 8px;
+		font-size: 18px;
 	}
 	.title2 span{
 		font-size: 20px;
@@ -570,7 +570,7 @@ top:80%; */
 	}
 
 	.typed-out {
-		font-size: 17px;
+		font-size: 20px;
 	}
 
 	@keyframes typing {
