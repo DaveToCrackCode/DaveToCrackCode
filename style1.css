@@ -3,6 +3,7 @@ body {
 	/* background-color: #202020; */
 	font-family: sans-serif;
 	zoom: 125%;
+	min-height: 100vh;
 	margin: 0px;
 	padding: 0px;
 	justify-content: center;
@@ -373,12 +374,12 @@ hr {
 .timetable{
 	display: flex;
 	justify-content: center;
-	color: #fff;
+	/* color: #fff; */
 	margin-bottom: 10%;
 }
 .timetable table{
 padding: 2%;
-background-color: rgba(0,0,0,0.8);
+/* background-color: rgba(0,0,0,0.8); */
 /* opacity: 80%; */
 /* border: 0.5px solid; */
 border-collapse: collapse;
@@ -396,19 +397,19 @@ border-collapse: collapse;
 	color: #000000;
 }
 
-.editorb {
+/* .editorb { */
 	/* The image used */
-	background-image: url("images/feedback.png");
+	/* background-image: url("images/feedback.png"); */
   
 	
-    background-attachment: fixed;
+    /* background-attachment: fixed;
 	background-position: center;
-	background-size: cover;
-	-ms-overflow-style: none;
+	background-size: cover; */
+	/* -ms-overflow-style: none; */
 	/* Internet Explorer 10+ */
-	scrollbar-width: none;
-	background-repeat: no-repeat;
-  }
+	/* scrollbar-width: none; */
+	/* background-repeat: no-repeat; */
+  /* } */
 /* ends here */
 
 
@@ -622,10 +623,10 @@ top:80%; */
 
 
 	.timetable table tr td{
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 18px;
-		padding-bottom: 18px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		font-size: 15px;
   }
 
