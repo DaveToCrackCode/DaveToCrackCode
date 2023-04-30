@@ -400,16 +400,14 @@ border-collapse: collapse;
 	/* The image used */
 	background-image: url("images/feedback.png");
   
-	/* Add the blur effect */
 	
-  
-	/* Full height */
-	height: 100%;
-  
-	/* Center and scale the image nicely */
+    background-attachment: fixed;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
+	-ms-overflow-style: none;
+	/* Internet Explorer 10+ */
+	scrollbar-width: none;
+	background-repeat: no-repeat;
   }
 /* ends here */
 
