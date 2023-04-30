@@ -1,4 +1,11 @@
+// Table of contests
 
+   
+
+
+
+
+// 
 function opendis(){
   var x=document.getElementById("discriptionblock");
 
@@ -132,7 +139,7 @@ function changemod(){
   
  }
  else {
-  
+
   localStorage.setItem("mode","white");
   hbcolor.style.backgroundColor="black";
   ftclr.style.backgroundColor="black";

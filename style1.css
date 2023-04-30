@@ -368,6 +368,59 @@ hr {
 
 /* DSA serial ends here */
 
+
+/* Contest Coding */
+.timetable{
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	margin-bottom: 10%;
+}
+.timetable table{
+padding: 2%;
+background-color: black;
+opacity: 80%;
+/* border: 0.5px solid; */
+border-collapse: collapse;
+
+}
+.timetable table tr td{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+.upcoming{
+	background-color: rgb(79, 255, 120);
+	color: #000000;
+}
+
+.editorb {
+	/* The image used */
+	background-image: url("images/feedback.png");
+  
+	/* Add the blur effect */
+	
+  
+	/* Full height */
+	height: 100%;
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+/* ends here */
+
+
+
+
+
+
+
+
+
 /* Feedback form */
 .title2 {
 	/* position: relative; */
@@ -568,6 +621,15 @@ top:80%; */
 	.head_container {
 		display: none;
 	}
+
+
+	.timetable table tr td{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 12px;
+  }
 
 	.typed-out {
 		font-size: 20px;
