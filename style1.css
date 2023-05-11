@@ -10,8 +10,7 @@ body {
 	justify-items: center;
 	position: relative;
 	/* background-image: url("images/bbg1.png"); */
-	background-color: white;
-	min-height: 80vh;
+	background-color: #E8E8E8;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -21,6 +20,7 @@ body {
 	scrollbar-width: none;
 	/* Firefox */
 }
+
 
 body::-webkit-scrollbar {
 	display: none;
@@ -282,8 +282,9 @@ hr {
 }
 
 .discriptiondsa {
+	font-family: Arial, Helvetica, sans-serif;
 	display: flex;
-	height: 90%;
+	/* height: 90%; */
 	padding: 5%;
 	/* color: #000000; */
 	/* background-color: #000000; */
@@ -299,7 +300,7 @@ hr {
 	padding-left: 10%;
 	height: 30%;
 	/* width: 100%; */
-	padding: 5%;
+	padding: 2%;
 	font-size: 20px;
 	margin-left: 8%;
 	font-weight: bold;
@@ -316,9 +317,7 @@ hr {
 #droparray {
 	padding: 0px;
 	margin: 0px;
-	/* display: none; */
-	color: rgb(0, 0, 0);
-	/* background-color: 000; */
+	/* color: rgb(0, 0, 0); */
 
 }
 
@@ -368,49 +367,38 @@ hr {
 }
 
 /* DSA serial ends here */
+#timetable {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	/* width: 100%; */
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+  }
+  
+  #timetable td, #timetable th {
+	border: 2px;
+	cursor: pointer;
+	padding: 10px;
+	/* color: #000000; */
+  }
+  
+ 
+  .timetable_even {
+	background-color: #f2f2f2;
+  }
+  
+  #timetable th {
+	/* padding-top: 12px; */
+	/* padding-bottom: 12px; */
+	text-align: left;
+	background-color: #ef5541;
+
+  }
 
 
 /* Contest Coding */
-.timetable{
-	display: flex;
-	justify-content: center;
-	/* color: #fff; */
-	margin-bottom: 10%;
-}
-.timetable table{
-padding: 2%;
-/* background-color: rgba(0,0,0,0.8); */
-/* opacity: 80%; */
-/* border: 0.5px solid; */
-border-collapse: collapse;
 
-}
-.timetable table tr td{
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	font-size: 20px;
-}
-.upcoming{
-	background-color: rgb(79, 255, 120);
-	color: #000000;
-}
-
-/* .editorb { */
-	/* The image used */
-	/* background-image: url("images/feedback.png"); */
-  
-	
-    /* background-attachment: fixed;
-	background-position: center;
-	background-size: cover; */
-	/* -ms-overflow-style: none; */
-	/* Internet Explorer 10+ */
-	/* scrollbar-width: none; */
-	/* background-repeat: no-repeat; */
-  /* } */
-/* ends here */
 
 
 
@@ -522,10 +510,8 @@ border-collapse: collapse;
 
 /* footer from here */
 #footer {
-	/* position: inherit;
-top:80%; */
-	margin-top: auto;
-	/* bottom: 0px; */
+	
+ 
 	background-color: white;
 	/* opacity: 80%; */
 	display: flex;
@@ -611,7 +597,7 @@ top:80%; */
 		font-size: 15px;
 		/* line-height: normal; */
 	}
-
+    
 	
 	.openbtn {
 		display: flex;
@@ -631,7 +617,7 @@ top:80%; */
   }
 
 	.typed-out {
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	@keyframes typing {
