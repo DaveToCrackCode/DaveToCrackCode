@@ -65,10 +65,8 @@ function changemode1(){
   for(var i=0;i<sidepan.length;i++){
     sidepan[i].style.backgroundColor="black";
   }
-
   // localStorage.setItem('mode','white');
 }
-
 else{
   for(var i=0;i<time_table_even.length;i++){
   time_table_even[i].style.backgroundColor="#DCDCDC";
@@ -87,13 +85,10 @@ else{
   for(var i=0;i<sidepan.length;i++){
     sidepan[i].style.backgroundColor="white";
   }
- 
 }
 document.getElementById("loading").style.display = "none";
 }
-
-function changemod(){
-  
+function changemod(){ 
   var bk=document.body;
   var hbcolor=document.getElementById("header");
   var y=document.getElementsByClassName("textmode");
